@@ -21,6 +21,7 @@ Open a terminal or command prompt on your local machine.
 Use the SFTP command-line tool to establish a connection to the sandbox environment. Replace "hostname", "username", and "password" with the provided information:
 
 sftp Your_USERNAME@alx-cod.online
+
 Enter the password when prompted to authenticate and establish the connection.
 
 Once connected, navigate to the directory where you want to upload the screenshots in the sandbox environment. For example:
@@ -33,7 +34,9 @@ lcd C:\Users\anask\OneDrive\Bureau\Git\
 Then Use put commande to uplaod the JPG or PNG files to uplaod it from your local machines to your sandbox.
 
 1- put 0-first_9_tasks.jpg
+
 2- put 1-next_9_tasks.jpg
+
 3- put 2-next_9_tasks.jpg
 
 Confirm that the screenshots have been successfully transferred by checking the sandbox directory.
