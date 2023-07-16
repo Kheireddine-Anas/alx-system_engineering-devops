@@ -1,8 +1,10 @@
-#Project Name
+#Command line for the win
+
 Description
 This project is a part of the CMD Challenge, focusing on improving command-line skills. The objective of this project is to complete various tasks using the command line and demonstrate the use of the SFTP command-line tool for file transfer.
 
 #Installation
+
 Clone this repository:
 
 git clone https://YOUR ACCES TOKEN@github.com/Kheireddine-Anas/alx-system_engineering-devops.git
