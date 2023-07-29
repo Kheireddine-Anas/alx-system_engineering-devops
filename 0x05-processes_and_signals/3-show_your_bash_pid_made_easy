@@ -1,4 +1,19 @@
-#!/usr/bin/env bash
-#displays the PID, along with the process name, of processes whose name contain
-# the word bash.
-pgrep -l "bash"
+#!/bin/bash
+
+current_pid=$$
+process_name="bash"
+
+for pid in /proc/*/; do
+    pid=${pid%/}
+    pid=${pid##*/}
+    
+    # Check if the PID is a number
+    if [[ $pid =~ ^[0-9]+$ ]]; then
+        process_cmdline=$(tr '\0' ' ' < "/proc/$pid/cmdline")
+
+        # Check if the process name contains the word "bash"
+        if grep -q "$process_name" <<< "$process_cmdline"; then
+            echo "$pid $process_cmdline"
+        fi
+    fi
+done
